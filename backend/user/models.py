@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import List
-from ..mixins import MixinId
+from backend.mixins import MixinId
 
 class _UserBaseModel(BaseModel):
     phone: str

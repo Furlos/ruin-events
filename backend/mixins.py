@@ -3,8 +3,11 @@ from uuid import uuid4
 
 from pydantic import BaseModel, Field
 
-from src.types import EntryId
+from typing import Annotated, TypeAlias
+from uuid import UUID
 
+
+EntryId: TypeAlias = Annotated[str, UUID.hex]
 
 class MixinId(BaseModel):
     id: EntryId = Field(default_factory=lambda: EntryId(uuid4()))
