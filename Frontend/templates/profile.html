@@ -1,1 +1,122 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - Ruin Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #f5f5f5;
+            padding: 10px 0;
+        }
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .profile-info {
+            text-align: left;
+            margin: auto;
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+        }
+        .profile-info h2 {
+            text-align: center;
+        }
+        .profile-info p {
+            margin: 5px 0;
+        }
+        .upcoming-events {
+            text-align: left;
+            margin: auto;
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .upcoming-events h2 {
+            text-align: center;
+        }
+        .upcoming-events .event {
+            margin-bottom: 15px;
+        }
+        .upcoming-events .event h3 {
+            margin: 0;
+        }
+        .upcoming-events .event p {
+            margin: 5px 0;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ruin Event</h1>
+    </div>
+    <div class="menu">
+        <a href="homepage.html">Главная</a>
+        <a href="affiche.html">Афиша</a>
+        <a href="registry.html">Регистрация</a>
+        <a href="profile.html">Профиль</a>
+    </div>
+    <div class="content">
+        <div class="profile-info">
+            <h2>Профиль</h2>
+            <p><strong>Имя:</strong> Иван Иванов</p>
+            <p><strong>Email:</strong> ivan@example.com</p>
+            <p><strong>Возраст:</strong> 28</p>
+            <p><strong>Мероприятия:</strong> Участник 5 мероприятий</p>
+        </div>
+        <div class="upcoming-events">
+            <h2>Предстоящие мероприятия</h2>
+            <div class="event">
+                <h3>Путешествие по Мещерскому краю</h3>
+                <p><strong>Дата:</strong> 12 апреля</p>
+                <p><strong>Место:</strong> Граница Мещерского края</p>
+            </div>
+            <div class="event">
+                <h3>Археологический раскоп</h3>
+                <p><strong>Дата:</strong> 13 апреля</p>
+                <p><strong>Место:</strong> Долина реки Клязьмы</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Ruin Event. Все права защищены.</p>
+    </div>
+</body>
+</html>

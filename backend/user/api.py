@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Query
-from .models import _UserBaseModel
-from .services import UserService
+from User.models import _UserBaseModel
+from User.services import UserService
 
 router = APIRouter()
 

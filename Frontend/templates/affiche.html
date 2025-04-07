@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            right: 10px;
+            top: 60px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .menu a {
+            margin: 5px 0;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .event {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+        .event h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .event .date {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .event .location {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .event .description {
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .event .register-btn {
+            display: block;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ruin Event</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="homepage.html">Главная</a>
+        <a href="affiche.html">Афиша</a>
+        <a href="registry.html">Регистрация</a>
+        <a href="profile.html">Профиль</a>
+    </div>
+    <div class="container">
+        <div class="event">
+            <h2>Путешествие по Мещерскому краю</h2>
+            <p class="date">12 апреля</p>
+            <p class="location">Граница Мещерского края</p>
+            <div class="description">
+                <p>В этот раз мы отправляемся в Мещерский край, где нас ждут удивительные пейзажи и интересные истории.</p>
+                <p>Программа мероприятия:</p>
+                <ul>
+                    <li>Экскурсия по заповедным местам</li>
+                    <li>Посещение местного музея</li>
+                    <li>Мастер-класс по народным ремеслам</li>
+                </ul>
+            </div>
+            <a href="#register" class="register-btn">Регистрация</a>
+        </div>
 
+        <div class="event">
+            <h2>Археологический раскоп</h2>
+            <p class="date">13 апреля</p>
+            <p class="location">Долина реки Клязьмы</p>
+            <div class="description">
+                <p>Присоединяйтесь к нам на археологическом раскопе в долине реки Клязьмы. Узнайте больше о древней истории региона.</p>
+                <p>Программа мероприятия:</p>
+                <ul>
+                    <li>Лекция по археологии</li>
+                    <li>Практическое занятие на раскопе</li>
+                    <li>Выставка находок</li>
+                </ul>
+            </div>
+            <a href="#register" class="register-btn">Регистрация</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Ruin Event. Все права защищены.</p>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>

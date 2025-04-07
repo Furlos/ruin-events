@@ -1,1 +1,170 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            right: 10px;
+            top: 60px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .menu a {
+            margin: 5px 0;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .container label {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #444;
+            border: 1px solid #777;
+            border-radius: 5px;
+            color: white;
+        }
+        .container input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ruin Event</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="homepage.html">Главная</a>
+        <a href="affiche.html">Афиша</a>
+        <a href="registry.html">Регистрация</a>
+        <a href="profile.html">Профиль</a>
+    </div>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <p>При регистрации вы получаете информацию о прогулках по историческим местам, оплату участия в них и возможность смотреть выбранные нами заявки.</p>
+        <form>
+            <label for="name">ваше имя*</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">телефон</label>
+            <input type="text" id="phone" name="phone">
+            <label for="email">e-mail*</label>
+            <input type="email" id="email" name="email" required>
+            <label for="age">возраст</label>
+            <input type="text" id="age" name="age">
+            <label>
+                <input type="checkbox" name="consent" required>
+                я даю согласие на обработку персональных данных
+            </label>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+    <div class="social-links">
+        <a href="#">VK канал</a>
+        <a href="#">Telegram канал</a>
+        <a href="#">Yaroslav</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Ruin Event. Все права защищены.</p>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
