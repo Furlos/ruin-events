@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AffichePage from './pages/AffichePage';
+import DonatePage from './pages/DonatePage';
+import GalleryPage from './pages/GalleryPage';
+import ProfilePage from './pages/ProfilePage';
+import VKPage from './pages/VKPage';
+import TelegramPage from './pages/TelegramPage';
+import RegistrationPage from './pages/RegistrationPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/affiche" component={AffichePage} />
+        <Route path="/donate" component={DonatePage} />
+        <Route path="/gallery" component={GalleryPage} />
+        <Route path="/profile" component={ProfilePage} />
+        <Route path="/vk" component={VKPage} />
+        <Route path="/telegram" component={TelegramPage} />
+        <Route path="/registration" component={RegistrationPage} />
+        <Route path="/" component={HomePage} />
+      </Switch>
+    </Router>
   );
 }
 
