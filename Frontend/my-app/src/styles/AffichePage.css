@@ -1,0 +1,47 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.event {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.event h3 {
+  margin-top: 0;
+}
+
+.event button {
+  background-color: #004d40;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.event button:hover {
+  background-color: #00332e;
+}
+
+.contacts {
+  margin: 20px 0;
+}
+
+.contacts a {
+  color: #004d40;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}

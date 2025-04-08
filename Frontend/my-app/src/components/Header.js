@@ -27,6 +27,7 @@ const Header = () => {
           <Link to="/vk" title="VK канал">VK канал</Link>
           <Link to="/telegram" title="Telegram канал">Telegram канал</Link>
           <Link to="/registration">Регистрация</Link>
+          <Link to="/login">Войти</Link>
         </div>
       )}
     </div>

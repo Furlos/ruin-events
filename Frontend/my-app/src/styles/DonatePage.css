@@ -1,0 +1,25 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.donate-button {
+  background-color: #004d40;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.donate-button:hover {
+  background-color: #00332e;
+}

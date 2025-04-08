@@ -8,6 +8,7 @@ import ProfilePage from './pages/ProfilePage';
 import VKPage from './pages/VKPage';
 import TelegramPage from './pages/TelegramPage';
 import RegistrationPage from './pages/RegistrationPage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/vk" component={VKPage} />
         <Route path="/telegram" component={TelegramPage} />
         <Route path="/registration" component={RegistrationPage} />
+        <Route path="/login" component={LoginPage} />
         <Route path="/" component={HomePage} />
       </Switch>
     </Router>
